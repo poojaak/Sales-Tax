@@ -1,0 +1,4 @@
+#! /bin/sh
+export ANT_HOME=tools/apache-ant-1.8.2
+ant -Divy=true -Dgems=true
+tools/apache-ant-1.8.2/bin/ant -logger org.apache.tools.ant.NoBannerLogger -buildfile build.xml -emacs "$@"
