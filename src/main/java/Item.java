@@ -6,7 +6,7 @@ public class Item {
     private double itemPrice;
     private double salesTax;
 
-    public Item(int itemQuantity, String itemName, int itemPrice) {
+    public Item(int itemQuantity, String itemName, double itemPrice) {
         this.itemQuantity=itemQuantity;
         this.itemName=itemName;
         this.itemPrice=itemPrice;

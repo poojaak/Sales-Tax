@@ -6,10 +6,10 @@ import static org.junit.Assert.assertThat;
 public class ItemTest{
 
     @Test
-    public void shouldCreateChoclateItem(){
-        Item choclate = new Item(1,"Choclate",20);
-        assertThat(choclate.getItemName(),is("Choclate"));
-        assertThat(choclate.getItemQuantity(), is(1));
-        assertThat(choclate.getPrice(),is(20.0));
+    public void shouldCreateChoclateBarItem(){
+        Item choclateBar = new Item(1,"Choclate bar",0.85);
+        assertThat(choclateBar.getItemName(),is("Choclate bar"));
+        assertThat(choclateBar.getItemQuantity(), is(1));
+        assertThat(choclateBar.getPrice(),is(0.85));
     }
 }
