@@ -1,3 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite errors="0" failures="0" name="Calculation of sales tax" tests="0" time="0.047000">
+<testsuite errors="0" failures="0" name="Calculation of sales tax" tests="4" time="0.202000">
+<testcase classname="Calculation of sales tax.Sales tax exemption" name="Sales tax exemption" time="0.031000">
+</testcase>
+<testcase classname="Calculation of sales tax.Sales tax on goods that are exempted from tax but are imported goods" name="Sales tax on goods that are exempted from tax but are imported goods" time="0.031000">
+</testcase>
+<testcase classname="Calculation of sales tax.Sales tax on goods" name="Sales tax on goods" time="0.046000">
+</testcase>
+<testcase classname="Calculation of sales tax.Sales tax on goods that are imported and are not under exemption tax category" name="Sales tax on goods that are imported and are not under exemption tax category" time="0.094000">
+</testcase>
 </testsuite>
