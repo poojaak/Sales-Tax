@@ -3,15 +3,17 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.LinkedHashMap;
 import java.util.List;
 
 public class InputReader {
     List<Item> itemList;
+    LinkedHashMap<Integer,Integer> noORecordsPerInput=new LinkedHashMap<Integer, Integer>();
 
     public boolean inputFileExist(String file){
         try{
             File fileName=new File(file);
-            return fileName.exists()?true:false;
+            return fileName.exists();
         }catch (Exception e){
             System.out.print("File not Found");
         }
@@ -20,16 +22,26 @@ public class InputReader {
 
     public Boolean readInputFromFile(String filename) {
         itemList=new ArrayList<Item>();
+        int recordsPerInput=0;
+        int numOfInput=0;
         if (inputFileExist(filename)){
             BufferedReader reader= null;
             try {
                 reader = new BufferedReader(new FileReader(filename));
                 String line=null;
                 while ((line=reader.readLine())!=null){
-                    if(!line.contains("Input") && !line.isEmpty()){
-                        makeItem(line);
+                    if(!line.isEmpty())
+                    {
+                         if(!line.contains("Input") ){
+                            makeItem(line);
+                            recordsPerInput++;
+                         }
+                         else{
+                            noORecordsPerInput.put(numOfInput++,null);
+                         }
                     }
                 }
+                
                 return true;
             }catch (IOException e) {
                 System.out.println("Unable to read from file");
@@ -55,4 +67,7 @@ public class InputReader {
     }
 
 
+    public int totalNumOfInput() {
+        return noORecordsPerInput.size();
+    }
 }

@@ -34,4 +34,10 @@ public class InputReaderTest {
         assertEquals(retrievedItem.getPrice(),book.getPrice(),0);
 
     }
+
+    @Test
+    public void shouldCheckInputCount() throws FileNotFoundException {
+        inputReader.readInputFromFile("input.txt");
+        assertThat(inputReader.totalNumOfInput(),is(3));
+    }
 }
