@@ -32,5 +32,16 @@ public class SalesTaxCalculatorTest {
         assertThat(calculator.calculateTaxPercent(),is(15));
     }
 
+    @Test
+    public void shouldCalculateCorrectTax(){
+         Item book=new Item(1,"book",12.49);
+        SalesTaxCalculator calculator=new SalesTaxCalculator(book);
+        assertThat(calculator.calculatePriceAfterTaxation(),is(12.49));
+        Item perfume=new Item(1,"imported bottle of perfume",27.99);
+        calculator.setItem(perfume);
+        calculator.calculatePriceAfterTaxation();
+        assertThat(calculator.calculatePriceAfterTaxation(),is(32.19));
+    }
+
 
 }

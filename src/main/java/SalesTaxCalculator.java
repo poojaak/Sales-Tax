@@ -21,7 +21,7 @@ public class SalesTaxCalculator {
 
     public boolean checkIfGoodsAreExemptedFromTax(String itemName) {
         boolean flag=false;
-        String exemptedlList[]={"book","box of choclate","pills","tablets"};
+        String exemptedlList[]={"book","choclate","pills","tablets"};
 
         for (String anExemptedlList : exemptedlList) {
             if (itemName.contains(anExemptedlList)) {
@@ -33,5 +33,9 @@ public class SalesTaxCalculator {
 
     public void setItem(Item item) {
         this.item = item;
+    }
+
+    public double calculatePriceAfterTaxation() {
+        return Double.parseDouble(String.format("%.2f",item.getPrice()+(item.getPrice()*calculateTaxPercent()/100)));
     }
 }
