@@ -12,4 +12,16 @@ public class SalesTaxCalculatorTest {
         assertThat(calculator.checkIfGoodsAreExemptedFromTax(book.getItemName()),is(true));
     }
 
+    @Test
+    public void shouldAssignTaxDependingOnTyeOfGood(){
+        Item book=new Item(1,"book",27.99);
+        SalesTaxCalculator calculator=new SalesTaxCalculator(book);
+        assertThat(calculator.calculateTaxPercent(),is(0));
+        Item pen=new Item(1,"pen",30.42);
+        calculator.setItem(pen);
+        assertThat(calculator.calculateTaxPercent(),is(10));
+
+
+    }
+
 }

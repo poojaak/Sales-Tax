@@ -5,7 +5,13 @@ public class SalesTaxCalculator {
         this.item=item;
     }
 
-   
+   public int calculateTaxPercent() {
+        String itemName=item.getItemName();
+        int salesTaxPercent=0;
+        boolean flag = checkIfGoodsAreExemptedFromTax(itemName);
+        return salesTaxPercent+=flag?0:10;
+
+    }
 
     public boolean checkIfGoodsAreExemptedFromTax(String itemName) {
         boolean flag=false;
@@ -17,5 +23,9 @@ public class SalesTaxCalculator {
             }
         }
         return flag;
+    }
+
+    public void setItem(Item item) {
+        this.item = item;
     }
 }
