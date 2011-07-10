@@ -37,11 +37,16 @@ public class InputReader {
                             recordsPerInput++;
                          }
                          else{
-                            noORecordsPerInput.put(numOfInput++,null);
+                            if(recordsPerInput>0){
+                                numOfInput++;
+                                noORecordsPerInput.put(numOfInput,recordsPerInput);
+                                recordsPerInput=0;
+                            }
                          }
                     }
                 }
-                
+                numOfInput++;
+                noORecordsPerInput.put(numOfInput,recordsPerInput);
                 return true;
             }catch (IOException e) {
                 System.out.println("Unable to read from file");
@@ -69,5 +74,9 @@ public class InputReader {
 
     public int totalNumOfInput() {
         return noORecordsPerInput.size();
+    }
+
+    public Integer getNumOfItemsPerInput(int key) {
+        return noORecordsPerInput.get(key);
     }
 }

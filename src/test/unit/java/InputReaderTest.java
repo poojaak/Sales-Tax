@@ -40,4 +40,12 @@ public class InputReaderTest {
         inputReader.readInputFromFile("input.txt");
         assertThat(inputReader.totalNumOfInput(),is(3));
     }
+
+     @Test
+    public void shouldCheckNumOfItemsPerInput() throws FileNotFoundException {
+        inputReader.readInputFromFile("input.txt");
+        assertThat(inputReader.getNumOfItemsPerInput(1),is(3));
+        assertThat(inputReader.getNumOfItemsPerInput(2),is(2));
+        assertThat(inputReader.getNumOfItemsPerInput(3),is(4));
+    }
 }
