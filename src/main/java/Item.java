@@ -23,4 +23,12 @@ public class Item {
     public double getPrice() {
         return itemPrice;
     }
+
+    public double getSalesTax(){
+        return salesTax;
+    }
+
+    public void setSalesTax(double tax){
+        salesTax=tax;
+    }
 }

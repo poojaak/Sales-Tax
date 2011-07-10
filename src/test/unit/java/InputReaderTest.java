@@ -28,7 +28,7 @@ public class InputReaderTest {
         inputReader.readInputFromFile("input.txt");
         itemList=inputReader.getItemList();
         Item retrievedItem=itemList.get(0);
-        
+
         assertEquals(retrievedItem.getItemName(),book.getItemName());
         assertEquals(retrievedItem.getItemQuantity(),book.getItemQuantity());
         assertEquals(retrievedItem.getPrice(),book.getPrice(),0);
