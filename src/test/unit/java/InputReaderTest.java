@@ -4,21 +4,34 @@ import java.io.FileNotFoundException;
 import java.util.List;
 
 import static org.hamcrest.core.Is.is;
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertThat;
 
 
 public class InputReaderTest {
     List<Item> itemList;
+    InputReader inputReader=new InputReader();
 
     @Test
     public void checkFileExist() throws FileNotFoundException {
-        InputReader inputReader=new InputReader();
         assertThat(inputReader.inputFileExist("input.txt"),is(true));
     }
 
     @Test
     public void shouldReadInput() throws FileNotFoundException {
-        InputReader inputReader=new InputReader();
-        assertThat(inputReader.readInputFromFile("input.txt"),is(true));
+        assertThat(inputReader.readInputFromFile("input.txt"), is(true));
+    }
+
+    @Test
+    public void shouldMakeAnItem(){
+        Item book=new Item(1,"book",12.49);
+        inputReader.readInputFromFile("input.txt");
+        itemList=inputReader.getItemList();
+        Item retrievedItem=itemList.get(0);
+        
+        assertEquals(retrievedItem.getItemName(),book.getItemName());
+        assertEquals(retrievedItem.getItemQuantity(),book.getItemQuantity());
+        assertEquals(retrievedItem.getPrice(),book.getPrice(),0);
+
     }
 }
