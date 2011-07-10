@@ -8,18 +8,24 @@ public class SalesTaxCalculator {
    public int calculateTaxPercent() {
         String itemName=item.getItemName();
         int salesTaxPercent=0;
-        boolean flag = checkIfGoodsAreExemptedFromTax(itemName);
-        return salesTaxPercent+=flag?0:10;
+        boolean isExemptedGood = checkIfGoodsAreExemptedFromTax(itemName);
+        return salesTaxPercent+=(isExemptedGood?0:10) + (checkIfItemIsImported(itemName)?5:0);
+   }
 
+    private boolean checkIfItemIsImported(String itemName) {
+        if (itemName.contains("imported"))
+            return true;
+        else  
+            return false;
     }
 
     public boolean checkIfGoodsAreExemptedFromTax(String itemName) {
         boolean flag=false;
-        String exemptedlList[]={"books","box of choclates","pills","tablets"};
+        String exemptedlList[]={"book","box of choclate","pills","tablets"};
 
-        for(int count=0;count<exemptedlList.length;count++){
-            if(exemptedlList[count].indexOf(itemName)>=0){
-                flag=true;
+        for (String anExemptedlList : exemptedlList) {
+            if (itemName.contains(anExemptedlList)) {
+                flag = true;
             }
         }
         return flag;
