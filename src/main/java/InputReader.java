@@ -3,12 +3,13 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.LinkedHashMap;
 import java.util.List;
 
 public class InputReader {
     List<Item> itemList;
-    LinkedHashMap<Integer,Integer> noORecordsPerInput=new LinkedHashMap<Integer, Integer>();
+
+    //LinkedHashMap<Integer,Integer> noORecordsPerInput=new LinkedHashMap<Integer, Integer>();
+    //List<TotalSalesTax> taxOnEachInput;
 
     public boolean inputFileExist(String file){
         try{
@@ -22,8 +23,7 @@ public class InputReader {
 
     public Boolean readInputFromFile(String filename) {
         itemList=new ArrayList<Item>();
-        int recordsPerInput=0;
-        int numOfInput=0;
+        int countOfItemsPurchased=0;
         if (inputFileExist(filename)){
             BufferedReader reader= null;
             try {
@@ -34,19 +34,19 @@ public class InputReader {
                     {
                          if(!line.contains("Input") ){
                             makeItem(line);
-                            recordsPerInput++;
+                            countOfItemsPurchased++;
                          }
-                         else{
-                            if(recordsPerInput>0){
-                                numOfInput++;
-                                noORecordsPerInput.put(numOfInput,recordsPerInput);
-                                recordsPerInput=0;
-                            }
-                         }
+//                         else{
+//                            if(recordsPerInput>0){
+//                                numOfInput++;
+//                                noORecordsPerInput.put(numOfInput,recordsPerInput);
+//                                recordsPerInput=0;
+//                            }
+//                         }
                     }
                 }
-                numOfInput++;
-                noORecordsPerInput.put(numOfInput,recordsPerInput);
+//                numOfInput++;
+//                noORecordsPerInput.put(numOfInput,recordsPerInput);
                 return true;
             }catch (IOException e) {
                 System.out.println("Unable to read from file");
@@ -64,6 +64,13 @@ public class InputReader {
         String itemName=line.substring(line.indexOf(" ")+1,line.lastIndexOf(" ")-3);
         double itemPrice=Double.parseDouble(line.substring(line.lastIndexOf(" "),line.length()));
         Item item=new Item(itemQuantiy,itemName,itemPrice);
+//        if(itemName.contains("imported")){
+//            item.setTypeOfItem("imported");
+//            itemName=itemName.replace("imported"," ");
+//            item.setTypeOfItem(itemName);
+//        }
+//        else
+//         item.setTypeOfItem("local");
         itemList.add(item);
     }
 
@@ -72,11 +79,5 @@ public class InputReader {
     }
 
 
-    public int totalNumOfInput() {
-        return noORecordsPerInput.size();
-    }
 
-    public Integer getNumOfItemsPerInput(int key) {
-        return noORecordsPerInput.get(key);
-    }
 }

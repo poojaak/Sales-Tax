@@ -5,6 +5,7 @@ public class Item {
     private int itemQuantity;
     private double itemPrice;
     private double salesTax;
+    private String typeOfItem;
 
     public Item(int itemQuantity, String itemName, double itemPrice) {
         this.itemQuantity=itemQuantity;
@@ -14,6 +15,10 @@ public class Item {
 
     public String getItemName() {
         return itemName;
+    }
+
+    public String getTypeOfItem() {
+        return typeOfItem;
     }
 
     public int getItemQuantity() {
@@ -30,5 +35,13 @@ public class Item {
 
     public void setSalesTax(double tax){
         salesTax=tax;
+    }
+
+    public void setTypeOfItem(String typeOfItem){
+        this.typeOfItem=typeOfItem;
+    }
+
+    public Item(){
+
     }
 }

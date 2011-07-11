@@ -1514,8 +1514,8 @@ Tables used to define more examples after a scenario must now be prefixed. In En
     I want to be told the sum of two numbers
 
     Scenario: Add two numbers
-      Given I have entered 50 into the calculator
-      And I have entered 70 into the calculator
+      Given I have entered 50 into the calculationOnItem
+      And I have entered 70 into the calculationOnItem
       When I press add
       Then the result should be 120 on the screen
 
@@ -1616,8 +1616,8 @@ Prior to this release it could be hard to find out where the ruby step definitio
 a plain text step is defined. Not anymore! Cucumber will now output this:
 
   Scenario: Regular numbers
-    Given I have entered 3 into the calculator   # features/steps/calculator_steps.rb:12
-    And I have entered 2 into the calculator     # features/steps/calculator_steps.rb:12
+    Given I have entered 3 into the calculationOnItem   # features/steps/calculator_steps.rb:12
+    And I have entered 2 into the calculationOnItem     # features/steps/calculator_steps.rb:12
     When I press divide                          # features/steps/calculator_steps.rb:16
     Then the result should be 1.5 on the screen  # features/steps/calculator_steps.rb:20
     And the result class should be Float         # features/steps/calculator_steps.rb:24

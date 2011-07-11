@@ -5,5 +5,5 @@ Feature: Adding
       """
       hello
       """
-    When the calculator is run
+    When the calculationOnItem is run
     Then the output should be 4
