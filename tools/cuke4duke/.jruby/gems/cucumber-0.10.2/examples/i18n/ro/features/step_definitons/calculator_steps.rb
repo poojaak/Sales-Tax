@@ -2,9 +2,9 @@
 begin require 'rspec/expectations'; rescue LoadError; require 'spec/expectations'; end
 require 'cucumber/formatter/unicode'
 $:.unshift(File.dirname(__FILE__) + '/../../lib') 
-require 'calculationOnItem'
+require 'calculator'
 
-Datfiind /un calculationOnItem/ do
+Datfiind /un calculator/ do
   @calc = Calculator.new
 end
 

@@ -4,7 +4,7 @@ Feature: Addition
   I want to be told the sum of two numbers
 
   Scenario: Add two numbers
-    Given I visit the calculationOnItem page
+    Given I visit the calculator page
     And I fill in '50' for 'first'
     And I fill in '70' for 'second'
     When I press 'Add'

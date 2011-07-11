@@ -1,34 +1,35 @@
 import java.util.List;
 
-public class Receipt {
-   OnEachInput input=new OnEachInput();
+public class Receipt implements ItemTyeConstants{
 
-    public void printReport(){
-        input.calculateTax();
-        List<Item> itemList=input.getReader().getItemList();
-        int numOfItems=1;
+    public void print(List<Item> itemList,TotalSalesTax tax){
+        listItemNameAndPrice(itemList);
+        printSalesTaxAndTotal(tax);
+    }
+
+    private void listItemNameAndPrice(List<Item> itemList) {
         int count=0;
-        int nextItem=0;
-        double total=0;
-        while(numOfItems<=input.getSalesTax().size()){
-            System.out.println("Output " + numOfItems);
-            while (count<input.getReader().getNumOfItemsPerInput(numOfItems)){
-                total+=itemList.get(nextItem).getSalesTax();
-                printOutputItem(itemList.get(nextItem++));
-                count++;
-            }
-            System.out.println("Sales Tax: "+String.format("%.2f",input.getSalesTax().get(numOfItems-1)));
-            System.out.println("Total: "+String .format("%.2f",total));
-            System.out.println();
-            count=0;
-            total=0;
-            numOfItems++;
+        while (count<itemList.size()){
+            printItemInformation(itemList.get(count));
+            count++;
         }
-
 
     }
 
-    private void printOutputItem(Item item) {
-        System.out.println(item.getItemQuantity() + " " + item.getItemName() + ": " + item.getSalesTax());
+    private void printSalesTaxAndTotal(TotalSalesTax tax) {
+        System.out.println("Sales Tax: "+String.format("%.2f",tax.getSalesTax()));
+        System.out.println("Total: "+String .format("%.2f",tax.getTotal()));
+        System.out.println();
+    }
+
+    private void printItemInformation(Item item) {
+        System.out.print(item.getItemQuantity()+ " ");
+        if(item.getTypeOfItem().equals(IMPORTED)){
+            System.out.print(IMPORTED +" ");
+        }
+        System.out.println(item.getItemName() + ": " + item.getSalesTax());
+
+        
+       
     }
 }

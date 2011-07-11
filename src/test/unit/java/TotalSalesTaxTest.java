@@ -1,29 +1,25 @@
 import org.junit.Test;
 
-import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
+import static org.junit.Assert.assertThat;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 
-/**
- * Created by IntelliJ IDEA.
- * User: poojaak
- * Date: 7/11/11
- * Time: 7:53 PM
- * To change this template use File | Settings | File Templates.
- */
 public class TotalSalesTaxTest {
 
     @Test
     public void checkSalesTax(){
-        TotalSalesTax calculator=new TotalSalesTax();
-        calculator.calculateTotalSalesTax("input.txt");
-        assertThat(calculator.getSalesTax(),is(1.50));
-       
+
+        TotalSalesTax calculator=mock(TotalSalesTax.class);
+        when(calculator.getSalesTax()).thenReturn(1.50);
+        assertThat(calculator.getSalesTax(), is(1.50));
+
     }
 
       @Test
     public void checkTotalAmount(){
-        TotalSalesTax calculator=new TotalSalesTax();
-        calculator.calculateTotalSalesTax("input.txt");
+        TotalSalesTax calculator=mock(TotalSalesTax.class);
+         when(calculator.getTotal()).thenReturn(29.83);
         assertThat(calculator.getTotal(),is(29.83));
 
     }

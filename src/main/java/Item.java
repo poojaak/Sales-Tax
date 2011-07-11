@@ -41,6 +41,10 @@ public class Item {
         this.typeOfItem=typeOfItem;
     }
 
+     public void setItemName(String itemName){
+        this.itemName=itemName;
+    }
+
     public Item(){
 
     }

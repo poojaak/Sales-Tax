@@ -1,4 +1,4 @@
-Given /^I visit the calculationOnItem page$/ do
+Given /^I visit the calculator page$/ do
   visit '/'
 end
 

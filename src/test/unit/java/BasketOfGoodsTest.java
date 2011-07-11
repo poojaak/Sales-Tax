@@ -8,25 +8,25 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertThat;
 
 
-public class InputReaderTest {
+public class BasketOfGoodsTest {
     List<Item> itemList;
-    InputReader inputReader=new InputReader();
+    BasketOfGoods basketOfGoods =new BasketOfGoods();
 
     @Test
     public void checkFileExist() throws FileNotFoundException {
-        assertThat(inputReader.inputFileExist("input.txt"),is(true));
+        assertThat(basketOfGoods.basketExist("input.txt"),is(true));
     }
 
     @Test
     public void shouldReadInput() throws FileNotFoundException {
-        assertThat(inputReader.readInputFromFile("input.txt"), is(true));
+        assertThat(basketOfGoods.readItemsFromBasket("input.txt"), is(true));
     }
 
     @Test
     public void shouldMakeAnItem(){
         Item book=new Item(1,"book",12.49);
-        inputReader.readInputFromFile("input.txt");
-        itemList=inputReader.getItemList();
+        basketOfGoods.readItemsFromBasket("input.txt");
+        itemList= basketOfGoods.getItemList();
         Item retrievedItem=itemList.get(0);
 
         assertEquals(retrievedItem.getItemName(),book.getItemName());

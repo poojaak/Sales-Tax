@@ -5,7 +5,7 @@ Funcţionalitate: Adunare
   Vreau să pot face adunări exacte
 
   Scenariu: Suma a două numere
-    Dat fiind un calculationOnItem
+    Dat fiind un calculator
     Când introduc 5
     Şi introduc 7
     Şi apăs tasta Egal
