@@ -5,12 +5,13 @@ public class TypeOfItem implements ItemTyeConstants{
           return item.getTypeOfItem().equals(IMPORTED);
     }
 
-    public boolean checkIfGoodsAreExemptedFromTax(String itemName) {
+    public boolean checkIfGoodsAreExemptedFromTax(Item item) {
+
         boolean flag=false;
         String exemptedlList[]={"book","chocolate","pills","tablets"};
         int count=0;
         for(count=0;count<exemptedlList.length;count++){
-            if(itemName.indexOf(exemptedlList[count])>=0){
+            if(item.getItemName().indexOf(exemptedlList[count])>=0){
                      flag=true;
             }
         }

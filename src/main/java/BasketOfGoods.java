@@ -9,7 +9,15 @@ public class BasketOfGoods implements ItemTyeConstants{
     List<Item> itemList;
     TotalSalesTax tax=new TotalSalesTax();
     Receipt receipt=new Receipt();
+    static int basketCount=0;
 
+    public BasketOfGoods(){
+        basketCount++;
+    }
+
+    public static int getBasketCount(){
+        return basketCount;
+    }
 
     public boolean basketExist(String basket){
         try{
@@ -41,29 +49,10 @@ public class BasketOfGoods implements ItemTyeConstants{
 
     }
 
-    private void makeItem(String itemInfo) {
-        final String SPACE=" ";
-        int itemQuantiy=Integer.parseInt(itemInfo.substring(0, itemInfo.indexOf(SPACE)));
-        String itemName=itemInfo.substring(itemInfo.indexOf(SPACE)+1,itemInfo.lastIndexOf(SPACE)-3);
-        double itemPrice=Double.parseDouble(itemInfo.substring(itemInfo.lastIndexOf(SPACE),itemInfo.length()));
-
-        Item item=new Item(itemQuantiy,itemName,itemPrice);
-        item=setTypeToImportedItem(itemName, item);
-
-        itemList.add(item);
-    }
-
-    private Item setTypeToImportedItem(String itemName, Item item) {
-        if(itemName.contains(IMPORTED)){
-            itemName=itemName.replace(IMPORTED,"");
-            item.setItemName(itemName);
-            item.setTypeOfItem(IMPORTED);
-        }
-        else
-            item.setTypeOfItem(LOCAL);
-
-        return item;
-    }
+   public void makeItem(String itemInfo){
+        ConvertToItem convertToItem=new ConvertToItem();
+        itemList.add(convertToItem.createItem(itemInfo));
+   }
 
     public List<Item> getItemList() {
         return itemList;
@@ -71,6 +60,7 @@ public class BasketOfGoods implements ItemTyeConstants{
 
 
     public void printReceipt(String items){
+         System.out.println("Receipt "+getBasketCount());
         readItemsFromBasket(items);
         tax.calculateTotalSalesTax(itemList);
         receipt.print(itemList,tax);

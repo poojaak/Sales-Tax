@@ -1,26 +1,31 @@
 import org.junit.Test;
 
-import static org.hamcrest.core.Is.is;
-import static org.junit.Assert.assertThat;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
+import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 public class TotalSalesTaxTest {
 
     @Test
     public void checkSalesTax(){
+        TotalSalesTax calculator=new TotalSalesTax();
+        BasketOfGoods basket=new BasketOfGoods();
+        basket.readItemsFromBasket("basket2.txt");
 
-        TotalSalesTax calculator=mock(TotalSalesTax.class);
-        when(calculator.getSalesTax()).thenReturn(1.50);
-        assertThat(calculator.getSalesTax(), is(1.50));
+        calculator.calculateTotalSalesTax(basket.getItemList());
+
+        assertThat(Double.parseDouble(String.format("%.2f",calculator.getSalesTax())), is(7.65));
 
     }
 
       @Test
     public void checkTotalAmount(){
-        TotalSalesTax calculator=mock(TotalSalesTax.class);
-         when(calculator.getTotal()).thenReturn(29.83);
-        assertThat(calculator.getTotal(),is(29.83));
+          TotalSalesTax calculator=new TotalSalesTax();
+          BasketOfGoods basket=new BasketOfGoods();
+          basket.readItemsFromBasket("basket2.txt");
+
+          calculator.calculateTotalSalesTax(basket.getItemList());
+
+          assertThat(calculator.getTotal(),is(65.15));
 
     }
 

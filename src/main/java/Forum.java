@@ -1,4 +1,5 @@
 public class Forum {
+
     public static void main(String[] args){
         BasketOfGoods basketOfGoods1=new BasketOfGoods();
         basketOfGoods1.printReceipt("input.txt");
@@ -8,5 +9,6 @@ public class Forum {
 
         BasketOfGoods basketOfGoods3=new BasketOfGoods();
         basketOfGoods3.printReceipt("basket3.txt");
+       
     }
 }
