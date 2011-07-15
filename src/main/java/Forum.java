@@ -2,7 +2,7 @@ public class Forum {
 
     public static void main(String[] args){
         BasketOfGoods basketOfGoods1=new BasketOfGoods();
-        basketOfGoods1.printReceipt("input.txt");
+        basketOfGoods1.printReceipt("basket1.txt");
 
         BasketOfGoods basketOfGoods2=new BasketOfGoods();
         basketOfGoods2.printReceipt("basket2.txt");

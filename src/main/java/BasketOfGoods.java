@@ -41,7 +41,7 @@ public class BasketOfGoods implements ItemTyeConstants{
                 }
                 return true;
             }catch (IOException e) {
-                System.out.println("Unable to read from file");
+                System.out.println("Unable to retrieve from basket");
             }
         }
         return false;

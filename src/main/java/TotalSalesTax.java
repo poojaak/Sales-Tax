@@ -18,11 +18,13 @@ public class TotalSalesTax implements RoundToNearestValue{
                 salesTax+=item.getSalesTax()-item.getPrice();
                 total+=itemList.get(nextItem++).getSalesTax();
         }
+        salesTax=roundToNearestPointZeroFive(salesTax);
+        total=roundToNearestPointZeroFive(total);
         
     }
 
     public double roundToNearestPointZeroFive(double tax){
-        return Math.ceil(tax*20)/20;
+        return Double.parseDouble(String.format("%.2f",tax));
     }
 
      public Double getSalesTax() {

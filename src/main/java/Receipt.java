@@ -18,7 +18,7 @@ public class Receipt implements ItemTyeConstants{
 
     private void printSalesTaxAndTotal(TotalSalesTax tax) {
         System.out.println("Sales Tax: "+String.format("%.2f",tax.getSalesTax()));
-        System.out.println("Total: "+String .format("%.2f",tax.getTotal()));
+        System.out.println("Total: "+tax.getTotal());
         System.out.println();
     }
 

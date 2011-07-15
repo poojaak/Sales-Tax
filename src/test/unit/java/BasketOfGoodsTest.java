@@ -14,18 +14,18 @@ public class BasketOfGoodsTest {
 
     @Test
     public void checkFileExist() throws FileNotFoundException {
-        assertThat(basketOfGoods.basketExist("input.txt"),is(true));
+        assertThat(basketOfGoods.basketExist("basket1.txt"),is(true));
     }
 
     @Test
     public void shouldReadInput() throws FileNotFoundException {
-        assertThat(basketOfGoods.readItemsFromBasket("input.txt"), is(true));
+        assertThat(basketOfGoods.readItemsFromBasket("basket1.txt"), is(true));
     }
 
     @Test
     public void shouldMakeAnItem(){
         Item book=new Item(1,"book",12.49);
-        basketOfGoods.readItemsFromBasket("input.txt");
+        basketOfGoods.readItemsFromBasket("basket1.txt");
         itemList= basketOfGoods.getItemList();
         Item retrievedItem=itemList.get(0);
 
