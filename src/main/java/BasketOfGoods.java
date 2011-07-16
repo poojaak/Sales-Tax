@@ -31,13 +31,16 @@ public class BasketOfGoods implements ItemTyeConstants{
 
     public Boolean readItemsFromBasket(String basket) {
         itemList=new ArrayList<Item>();
+        Item item;
         if (basketExist(basket)){
             BufferedReader reader= null;
             try {
                 reader = new BufferedReader(new FileReader(basket));
                 String line=null;
                 while ((line=reader.readLine())!=null){
-                   makeItem(line);
+                   item=makeItem(line);
+                   item.calculateTax();
+                   itemList.add(item);
                 }
                 return true;
             }catch (IOException e) {
@@ -49,18 +52,17 @@ public class BasketOfGoods implements ItemTyeConstants{
 
     }
 
-   public void makeItem(String itemInfo){
+   public Item makeItem(String itemInfo){
         ConvertToItem convertToItem=new ConvertToItem();
-        itemList.add(convertToItem.createItem(itemInfo));
+        return convertToItem.createItem(itemInfo);
    }
 
     public List<Item> getItemList() {
         return itemList;
     }
 
-
     public void printReceipt(String items){
-         System.out.println("Receipt "+getBasketCount());
+        System.out.println("Receipt "+getBasketCount());
         readItemsFromBasket(items);
         tax.calculateTotalSalesTax(itemList);
         receipt.print(itemList,tax);

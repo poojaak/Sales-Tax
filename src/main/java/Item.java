@@ -1,16 +1,22 @@
 
-public class Item {
+public class Item implements ItemTyeConstants {
 
     private String itemName;
     private int itemQuantity;
     private double itemPrice;
     private double salesTax;
     private String typeOfItem;
+    private TaxCalculator calculator;
+
+
+    public Item(){
+    }
 
     public Item(int itemQuantity, String itemName, double itemPrice) {
         this.itemQuantity=itemQuantity;
         this.itemName=itemName;
         this.itemPrice=itemPrice;
+        this.calculator=new TaxCalculator();
     }
 
     public String getItemName() {
@@ -45,7 +51,15 @@ public class Item {
         this.itemName=itemName;
     }
 
-    public Item(){
+    public void calculateTax(){
+        setSalesTax(calculator.calculatePriceAfterTaxation(this));
+    }
 
+    public String toString() {
+        String format=getItemQuantity()+ " ";
+        if(getTypeOfItem().equals(IMPORTED)){
+            format+=IMPORTED +" ";
+        }
+        return format+=getItemName() + ": " + getSalesTax();
     }
 }

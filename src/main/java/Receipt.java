@@ -9,11 +9,12 @@ public class Receipt implements ItemTyeConstants{
 
     private void listItemNameAndPrice(List<Item> itemList) {
         int count=0;
+        String printFormatForItem;
         while (count<itemList.size()){
-            printItemInformation(itemList.get(count));
+            printFormatForItem=itemList.get(count).toString();
+            System.out.println(printFormatForItem);
             count++;
         }
-
     }
 
     private void printSalesTaxAndTotal(TotalSalesTax tax) {
@@ -22,14 +23,5 @@ public class Receipt implements ItemTyeConstants{
         System.out.println();
     }
 
-    private void printItemInformation(Item item) {
-        System.out.print(item.getItemQuantity()+ " ");
-        if(item.getTypeOfItem().equals(IMPORTED)){
-            System.out.print(IMPORTED +" ");
-        }
-        System.out.println(item.getItemName() + ": " + item.getSalesTax());
 
-        
-       
-    }
 }
