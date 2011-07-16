@@ -15,32 +15,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c7b6fa2-edfe-4f37-a5ea-d0995e4604b3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receipt1.txt" />
-      <change type="DELETED" beforePath="C:\Users\poojaak\Sales-Tax\src\main\java\BasketOfGoods.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\poojaak\Sales-Tax\src\main\java\ConvertToItem.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\poojaak\Sales-Tax\src\main\java\Forum.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\poojaak\Sales-Tax\src\main\java\Item.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\poojaak\Sales-Tax\src\main\java\ItemListParser.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\poojaak\Sales-Tax\src\main\java\ItemTyeConstants.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\poojaak\Sales-Tax\src\main\java\Receipt.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\poojaak\Sales-Tax\src\main\java\RoundToNearestValue.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\poojaak\Sales-Tax\src\main\java\TaxCalculator.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\poojaak\Sales-Tax\src\main\java\TotalAmountAndSalesTax.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\poojaak\Sales-Tax\src\main\java\TypeOfItem.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\poojaak\Sales-Tax\src\test\unit\java\BasketOfGoodsTest.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\poojaak\Sales-Tax\src\test\unit\java\ConvertToItemTest.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\poojaak\Sales-Tax\src\test\unit\java\ItemListParserTest.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\poojaak\Sales-Tax\src\test\unit\java\ItemTest.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\poojaak\Sales-Tax\src\test\unit\java\TaxCalculatorTest.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\poojaak\Sales-Tax\src\test\unit\java\TotalAmountAndSalesTaxTest.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\poojaak\Sales-Tax\src\test\unit\java\TypeOfItemTest.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/test/java/SalesTaxSteps.class" afterPath="$PROJECT_DIR$/target/test-classes/test/java/SalesTaxSteps.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ant.xml" afterPath="$PROJECT_DIR$/.idea/ant.xml" />
+      <change type="DELETED" beforePath="C:\Users\poojaak\Sales-Tax\src\main\java\main\java\TotalAmountAndSalesTax.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\poojaak\Sales-Tax\src\test\unit\unit\BasketOfGoodsTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\poojaak\Sales-Tax\src\test\unit\unit\ConvertToItemTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\poojaak\Sales-Tax\src\test\unit\unit\ItemListParserTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\poojaak\Sales-Tax\src\test\unit\unit\ItemTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\poojaak\Sales-Tax\src\test\unit\unit\TaxCalculatorTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\poojaak\Sales-Tax\src\test\unit\unit\TotalAmountAndSalesTaxTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\poojaak\Sales-Tax\src\test\unit\unit\TypeOfItemTest.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sales-Tax.iml" afterPath="$PROJECT_DIR$/Sales-Tax.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/SalesTax.feature" afterPath="$PROJECT_DIR$/features/SalesTax.feature" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SalesTaxSteps.java" afterPath="$PROJECT_DIR$/src/test/java/SalesTaxSteps.java" />
     </list>
     <ignored path="Sales-Tax.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -103,9 +86,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/unit/java/ConvertToItemTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="7" column="6" selection-start="191" selection-end="191" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -114,9 +95,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/unit/java/ItemListParserTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="11" column="7" selection-start="224" selection-end="224" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -125,9 +104,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/unit/java/ItemTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="7" column="7" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -136,9 +113,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/unit/java/TaxCalculatorTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="6" column="8" selection-start="159" selection-end="159" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -147,9 +122,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/unit/java/TotalAmountAndSalesTaxTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="9" column="6" selection-start="236" selection-end="236" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -157,7 +130,7 @@
       <file leaf-file-name="TypeOfItemTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/unit/java/TypeOfItemTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="121" selection-end="121" vertical-scroll-proportion="0.24548736">
+            <state line="4" column="0" selection-start="121" selection-end="121" vertical-scroll-proportion="0.24460432">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -239,6 +212,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -288,14 +262,6 @@
               <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="unit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -336,10 +302,6 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -357,9 +319,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Favorites" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -380,9 +341,9 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLanguage" value="Java" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -398,36 +359,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.Forum">
-    <configuration default="false" name="TotalAmountAndSalesTaxTest" type="TestNG" factoryName="TestNG" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" />
-      <module name="Sales-Tax" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TotalAmountAndSalesTaxTest" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
     <configuration default="false" name="TypeOfItemTest" type="TestNG" factoryName="TestNG" temporary="true">
       <extension name="coverage" enabled="false" merge="false" />
       <module name="Sales-Tax" />
@@ -535,6 +466,29 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
+    <configuration default="false" name="All in Sales-Tax" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" />
+      <module name="Sales-Tax" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -549,6 +503,25 @@
       </method>
     </configuration>
     <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" adl_options="" air_descriptor_path="" air_program_params="" air_publisher_id="" air_root_dir_path="" air_run_mode="AppDescriptor" browser_family="FIREFOX" class_name="" debugger_sdk="Module SDK" html_or_swf_file_path="" launcher_type="OSDefault" main_class_name="" method_name="" module_name="" output_log_level="" package_name="" player_path="FlashPlayer.exe" port="0" run_mode="HtmlOrSwfFile" run_trusted="false" scope="Class" socket_policy_port="0" url_to_launch="http://">
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+        <option name="PhingTarget" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -583,25 +556,6 @@
       <envs />
       <properties />
       <listeners />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-        <option name="PhingTarget" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -716,11 +670,11 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="JUnit.unit.java in Sales-Tax" />
-      <item index="1" class="java.lang.String" itemvalue="TestNG.TotalAmountAndSalesTaxTest" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.TypeOfItemTest" />
-      <item index="3" class="java.lang.String" itemvalue="TestNG.ItemTest" />
-      <item index="4" class="java.lang.String" itemvalue="TestNG.ConvertToItemTest" />
-      <item index="5" class="java.lang.String" itemvalue="Application.Forum" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG.TypeOfItemTest" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.ItemTest" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.ConvertToItemTest" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Forum" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.All in Sales-Tax" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -772,8 +726,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25528455" sideWeight="0.5275081" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.47249192" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25528455" sideWeight="0.5291262" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.47087377" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33666667" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -839,128 +793,86 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/Item.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ItemListParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ItemTyeConstants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Receipt.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/RoundToNearestValue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/TaxCalculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/TotalAmountAndSalesTax.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/TypeOfItem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SalesTaxSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.010830325" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/unit/java/ConvertToItemTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="6" selection-start="191" selection-end="191" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/unit/java/ItemListParserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="7" selection-start="224" selection-end="224" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/unit/java/ItemTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="7" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/unit/java/TaxCalculatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="8" selection-start="159" selection-end="159" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/unit/java/TotalAmountAndSalesTaxTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="6" selection-start="236" selection-end="236" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/unit/java/TypeOfItemTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="121" selection-end="121" vertical-scroll-proportion="0.24460432">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/unit/java/BasketOfGoodsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="13" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/unit/java/ConvertToItemTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="6" selection-start="191" selection-end="191" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/unit/java/ItemListParserTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="7" selection-start="224" selection-end="224" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/unit/java/ItemTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="7" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/unit/java/TaxCalculatorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="8" selection-start="159" selection-end="159" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/unit/java/TotalAmountAndSalesTaxTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="6" selection-start="236" selection-end="236" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SalesTaxSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.010830325">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/unit/java/TypeOfItemTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="121" selection-end="121" vertical-scroll-proportion="0.24548736">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="1" column="13" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
   </component>
