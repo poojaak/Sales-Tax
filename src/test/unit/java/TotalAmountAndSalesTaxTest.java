@@ -3,15 +3,15 @@ import org.junit.Test;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-public class TotalSalesTaxTest {
+public class TotalAmountAndSalesTaxTest {
 
     @Test
     public void checkSalesTax(){
-        TotalSalesTax calculator=new TotalSalesTax();
+        TotalAmountAndSalesTax calculator=new TotalAmountAndSalesTax();
         BasketOfGoods basket=new BasketOfGoods();
         basket.readItemsFromBasket("basket2.txt");
 
-        calculator.calculateTotalSalesTax(basket.getItemList());
+        calculator.calculateTotalAmountAndSalesTax(basket.getItemList());
 
         assertThat(Double.parseDouble(String.format("%.2f",calculator.getSalesTax())), is(7.65));
 
@@ -19,11 +19,11 @@ public class TotalSalesTaxTest {
 
       @Test
     public void checkTotalAmount(){
-          TotalSalesTax calculator=new TotalSalesTax();
+          TotalAmountAndSalesTax calculator=new TotalAmountAndSalesTax();
           BasketOfGoods basket=new BasketOfGoods();
           basket.readItemsFromBasket("basket2.txt");
 
-          calculator.calculateTotalSalesTax(basket.getItemList());
+          calculator.calculateTotalAmountAndSalesTax(basket.getItemList());
 
           assertThat(calculator.getTotal(),is(65.15));
 

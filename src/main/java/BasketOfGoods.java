@@ -7,7 +7,8 @@ import java.util.List;
 
 public class BasketOfGoods implements ItemTyeConstants{
     List<Item> itemList;
-    TotalSalesTax tax=new TotalSalesTax();
+    TotalAmountAndSalesTax tax=new TotalAmountAndSalesTax();
+    double salesTax=0,totalAmount=0;
     Receipt receipt=new Receipt();
     static int basketCount=0;
 
@@ -64,11 +65,26 @@ public class BasketOfGoods implements ItemTyeConstants{
     public void printReceipt(String items){
         System.out.println("Receipt "+getBasketCount());
         readItemsFromBasket(items);
-        tax.calculateTotalSalesTax(itemList);
-        receipt.print(itemList,tax);
-
+        calculateTotalAmountAndSalesTaxToBePaid(itemList);
+        String listOfItems= listOfItemNameAndPrice();
+        receipt.print(listOfItems,tax);
     }
 
+    private void calculateTotalAmountAndSalesTaxToBePaid(List<Item> itemList) {
+        tax.calculateTotalAmountAndSalesTax(itemList);
+        salesTax=tax.getSalesTax();
+        totalAmount=tax.getTotal();
+    }
 
-
+     private String listOfItemNameAndPrice() {
+        int count=0;
+        String listOfItems="";
+        Item item;
+        while (count<itemList.size()){
+            item=itemList.get(count);
+            listOfItems+=item+"\n";
+            count++;
+        }
+        return listOfItems;
+    }
 }
