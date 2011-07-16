@@ -16,14 +16,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9c7b6fa2-edfe-4f37-a5ea-d0995e4604b3" name="Default" comment="">
       <change type="DELETED" beforePath="C:\Users\poojaak\Sales-Tax\src\main\java\main\java\TotalAmountAndSalesTax.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\poojaak\Sales-Tax\src\test\unit\unit\BasketOfGoodsTest.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\poojaak\Sales-Tax\src\test\unit\unit\ConvertToItemTest.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\poojaak\Sales-Tax\src\test\unit\unit\ItemListParserTest.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\poojaak\Sales-Tax\src\test\unit\unit\ItemTest.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\poojaak\Sales-Tax\src\test\unit\unit\TaxCalculatorTest.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\poojaak\Sales-Tax\src\test\unit\unit\TotalAmountAndSalesTaxTest.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\poojaak\Sales-Tax\src\test\unit\unit\TypeOfItemTest.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mkyong-core-1.0-SNAPSHOT-sources.jar" afterPath="$PROJECT_DIR$/target/mkyong-core-1.0-SNAPSHOT-sources.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mkyong-core-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/mkyong-core-1.0-SNAPSHOT.jar" />
     </list>
     <ignored path="Sales-Tax.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -130,7 +124,7 @@
       <file leaf-file-name="TypeOfItemTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/unit/java/TypeOfItemTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="121" selection-end="121" vertical-scroll-proportion="0.24460432">
+            <state line="11" column="5" selection-start="391" selection-end="391" vertical-scroll-proportion="0.510929">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -262,6 +256,14 @@
               <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="unit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -358,7 +360,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Forum">
+  <component name="RunManager" selected="JUnit.All in Sales-Tax">
     <configuration default="false" name="TypeOfItemTest" type="TestNG" factoryName="TestNG" temporary="true">
       <extension name="coverage" enabled="false" merge="false" />
       <module name="Sales-Tax" />
@@ -712,7 +714,7 @@
     <frame x="-8" y="-8" width="1296" height="776" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32847896" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32847896" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.67313915" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2495935" sideWeight="0.5275081" order="2" side_tool="false" content_ui="tabs" />
@@ -726,8 +728,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25528455" sideWeight="0.5291262" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.47087377" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25528455" sideWeight="0.671521" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47087377" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33666667" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -861,18 +863,18 @@
         <state line="9" column="6" selection-start="236" selection-end="236" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/unit/java/BasketOfGoodsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="13" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/unit/java/TypeOfItemTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="121" selection-end="121" vertical-scroll-proportion="0.24460432">
+        <state line="11" column="5" selection-start="391" selection-end="391" vertical-scroll-proportion="0.510929">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/unit/java/BasketOfGoodsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="13" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
   </component>
