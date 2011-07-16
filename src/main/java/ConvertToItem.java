@@ -15,7 +15,7 @@ public class ConvertToItem implements ItemTyeConstants{
 
     private Item setTypeToImportedItem(String itemName, Item item) {
         if(itemName.contains(IMPORTED)){
-            itemName=itemName.replace(IMPORTED,"");
+            itemName=itemName.trim().replace(IMPORTED,"");
             item.setItemName(itemName);
             item.setTypeOfItem(IMPORTED);
         }

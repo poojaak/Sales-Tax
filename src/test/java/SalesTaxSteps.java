@@ -2,37 +2,48 @@ package test.java;
 
 import cuke4duke.annotation.I18n.EN.Given;
 import cuke4duke.annotation.I18n.EN.Then;
+import main.java.BasketOfGoods;
+import main.java.Item;
+import main.java.ItemListParser;
+import main.java.TotalAmountAndSalesTax;
 
-import java.lang.String;
+import java.util.ArrayList;
+import java.util.List;
 
 import static junit.framework.Assert.assertEquals;
 
-@SuppressWarnings({"UnusedDeclaration"})
-public class SalesTaxSteps {
-    private int salesTax=0;
+public class SalesTaxSteps
+{
+    BasketOfGoods basketOfGoods=new BasketOfGoods();
+    List<Item> itemList=new ArrayList<Item>();
+    String itemWithPrice[]=new String[4];
+    TotalAmountAndSalesTax totalAmountAndSalesTax=new TotalAmountAndSalesTax();
+    int itemNum =0;
 
-    @Given("^the goods are among books, food and medical products$")
-    public void assignTheGoods() {
-        salesTax+=0;
+    @Given("^the price of ([^\"]*)$")
+    public void getGoods(String itemInfo){
+     ItemListParser itemListParser=new ItemListParser();
+     Item item=itemListParser.makeItem(itemInfo);
+     item.calculateTax();
+     itemList.add(item);
     }
 
-    @Given("^the goods are imported$")
-    public void checkForImportedGoods() {
-            salesTax+=5;
+    @Then("^the cost of ([^\"]*) becomes ([^\"]*)$")
+    public void getReceipt(String itemName,String tax){
+        assertEquals(itemList.get(itemNum++).getSalesTax(),Double.parseDouble(tax));
     }
 
-    @Given("^the goods are not among books, food and medical products$")
-    public void assignTheNotExemptedGoods(){
-          salesTax+=10;
+   
+    @Then("^the Sales Tax becomes ([^\"]*)")
+    public void checkSalesTax(String salesTax){
+        totalAmountAndSalesTax.calculateTotalAmountAndSalesTax(itemList);
+         assertEquals(totalAmountAndSalesTax.getSalesTax(),Double.parseDouble(salesTax));
     }
 
-    @Then("^the sales tax is ([^\"]+) on each good$")
-    public void checkSalesTax(String tax) {
-        String calculatedTax="";
-        if(salesTax==0)
-            calculatedTax="exempted";
-        else
-            calculatedTax=salesTax+"%";
-        assertEquals(tax,calculatedTax);
+    @Then("^the Total Amount becomes ([^\"]*)")
+    public void checkTotalAmount(String totalAmount){
+        assertEquals(totalAmountAndSalesTax.getTotal(),Double.parseDouble(totalAmount));
     }
+    
+
 }

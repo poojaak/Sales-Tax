@@ -1,3 +1,4 @@
+
 public class Receipt implements ItemTyeConstants{
 
     public void print(String listItemNameAnaPrice, TotalAmountAndSalesTax tax){

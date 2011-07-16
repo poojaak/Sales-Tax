@@ -2,7 +2,7 @@ import org.junit.Test;
 
 import java.util.List;
 
-import static org.junit.Assert.assertEquals;
+import static junit.framework.Assert.assertEquals;
 
 
 public class ItemListParserTest {
@@ -16,9 +16,9 @@ public class ItemListParserTest {
 
         Item retrievedItem=itemList.get(0);
 
-        assertEquals(retrievedItem.getItemName(),book.getItemName());
-        assertEquals(retrievedItem.getItemQuantity(),book.getItemQuantity());
-        assertEquals(retrievedItem.getPrice(),book.getPrice(),0);
+        assertEquals(retrievedItem.getItemName(), book.getItemName());
+        assertEquals(retrievedItem.getItemQuantity(), book.getItemQuantity());
+        assertEquals(retrievedItem.getPrice(), book.getPrice(), 0);
 
     }
 }

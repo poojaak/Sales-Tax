@@ -1,5 +1,6 @@
+
 import java.util.List;
-public class TotalAmountAndSalesTax implements RoundToNearestValue{
+public class TotalAmountAndSalesTax  {
     private Double salesTax;
     private Double total;
 

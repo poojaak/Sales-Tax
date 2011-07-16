@@ -1,3 +1,4 @@
+
 public class TaxCalculator implements RoundToNearestValue{
 
     public static final int LOCAL_TAX_PERCENT = 10;

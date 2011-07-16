@@ -1,3 +1,4 @@
+
 import java.util.List;
 
 public class BasketOfGoods implements ItemTyeConstants {
@@ -30,7 +31,7 @@ public class BasketOfGoods implements ItemTyeConstants {
         tax.calculateTotalAmountAndSalesTax(itemList);
     }
 
-    private String listOfItemNameAndPrice() {
+    public String listOfItemNameAndPrice() {
         int count = 0;
         String listOfItems = "";
         Item item;
