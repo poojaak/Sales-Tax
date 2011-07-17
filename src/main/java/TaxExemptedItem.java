@@ -1,4 +1,5 @@
 public class TaxExemptedItem extends ItemType{
+
     public boolean checkItemType(Item item) {
             boolean flag=false;
             String exemptedlList[]={"book","chocolate","pills","tablets"};

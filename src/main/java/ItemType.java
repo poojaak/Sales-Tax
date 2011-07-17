@@ -1,5 +1,5 @@
 
-abstract class ItemType implements ItemTyeConstants{
+abstract class ItemType implements ItemTypeConstants {
 
     public abstract boolean checkItemType(Item item);
 

@@ -1,7 +1,7 @@
 
 import java.util.List;
 
-public class BasketOfGoods implements ItemTyeConstants {
+public class BasketOfGoods {
     private List<Item> itemList;
     static int basketCount = 0;
     private ItemListParser itemListParser;

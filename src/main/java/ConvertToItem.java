@@ -1,5 +1,5 @@
 
-public class ConvertToItem implements ItemTyeConstants{
+public class ConvertToItem implements ItemTypeConstants {
 
  public Item createItem(String itemInfo) {
         final String SPACE=" ";

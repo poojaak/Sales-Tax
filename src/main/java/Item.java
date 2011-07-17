@@ -1,5 +1,5 @@
 
-public class Item implements ItemTyeConstants {
+public class Item implements ItemTypeConstants {
 
     private String itemName;
     private int itemQuantity;
