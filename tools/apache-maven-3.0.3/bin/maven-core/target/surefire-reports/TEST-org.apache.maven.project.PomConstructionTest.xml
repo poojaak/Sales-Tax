@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="0" time="6.458" errors="0" skipped="0" tests="122" name="org.apache.maven.project.PomConstructionTest">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.6.0_25\jre\bin"/>
+    <property name="java.vm.version" value="20.0-b11"/>
+    <property name="java.vm.vendor" value="Sun Microsystems Inc."/>
+    <property name="java.vendor.url" value="http://java.sun.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\apache-maven-3.0.3\bin\maven-core"/>
+    <property name="java.runtime.version" value="1.6.0_25-b06"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="basedir" value="C:\apache-maven-3.0.3\bin\maven-core"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.6.0_25\jre\lib\endorsed"/>
+    <property name="os.arch" value="x86"/>
+    <property name="surefire.real.class.path" value="C:\apache-maven-3.0.3\bin\maven-core\target\surefire\surefirebooter55141576830015186.jar"/>
+    <property name="java.io.tmpdir" value="C:\Users\poojaak\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc."/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.6.0_25\jre\bin;.;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\RSA SecurID Token Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\Common Files\Roxio Shared\DLLShared\;C:\Program Files\Common Files\Roxio Shared\9.0\DLLShared\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Git\cmd;C:\apache-maven-3.0.3;%MAVEN_HOME%\bin\bin;c:\jruby-1.6.2\bin;"/>
+    <property name="surefire.test.class.path" value="C:\apache-maven-3.0.3\bin\maven-core\target\test-classes;C:\apache-maven-3.0.3\bin\maven-core\target\classes;C:\apache-maven-3.0.3\bin\maven-model\target\maven-model-3.0.3.jar;C:\apache-maven-3.0.3\bin\maven-settings\target\maven-settings-3.0.3.jar;C:\apache-maven-3.0.3\bin\maven-settings-builder\target\maven-settings-builder-3.0.3.jar;C:\apache-maven-3.0.3\bin\maven-repository-metadata\target\maven-repository-metadata-3.0.3.jar;C:\apache-maven-3.0.3\bin\maven-artifact\target\maven-artifact-3.0.3.jar;C:\apache-maven-3.0.3\bin\maven-plugin-api\target\maven-plugin-api-3.0.3.jar;C:\apache-maven-3.0.3\bin\maven-model-builder\target\maven-model-builder-3.0.3.jar;C:\apache-maven-3.0.3\bin\maven-aether-provider\target\maven-aether-provider-3.0.3.jar;C:\Users\poojaak\.m2\repository\org\sonatype\aether\aether-spi\1.11\aether-spi-1.11.jar;C:\Users\poojaak\.m2\repository\org\sonatype\aether\aether-impl\1.11\aether-impl-1.11.jar;C:\Users\poojaak\.m2\repository\org\sonatype\aether\aether-api\1.11\aether-api-1.11.jar;C:\Users\poojaak\.m2\repository\org\sonatype\aether\aether-util\1.11\aether-util-1.11.jar;C:\Users\poojaak\.m2\repository\org\sonatype\sisu\sisu-inject-plexus\2.1.1\sisu-inject-plexus-2.1.1.jar;C:\Users\poojaak\.m2\repository\org\sonatype\sisu\sisu-inject-bean\2.1.1\sisu-inject-bean-2.1.1.jar;C:\Users\poojaak\.m2\repository\org\sonatype\sisu\sisu-guice\2.9.4\sisu-guice-2.9.4-no_aop.jar;C:\Users\poojaak\.m2\repository\org\codehaus\plexus\plexus-interpolation\1.14\plexus-interpolation-1.14.jar;C:\Users\poojaak\.m2\repository\org\codehaus\plexus\plexus-utils\2.0.6\plexus-utils-2.0.6.jar;C:\Users\poojaak\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.4\plexus-classworlds-2.4.jar;C:\Users\poojaak\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar;C:\Users\poojaak\.m2\repository\org\sonatype\plexus\plexus-sec-dispatcher\1.3\plexus-sec-dispatcher-1.3.jar;C:\Users\poojaak\.m2\repository\org\sonatype\plexus\plexus-cipher\1.4\plexus-cipher-1.4.jar;C:\Users\poojaak\.m2\repository\commons-jxpath\commons-jxpath\1.3\commons-jxpath-1.3.jar;C:\Users\poojaak\.m2\repository\junit\junit\3.8.2\junit-3.8.2.jar;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="50.0"/>
+    <property name="sun.management.compiler" value="HotSpot Client Compiler"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\poojaak"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.6"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="poojaak"/>
+    <property name="java.class.path" value="C:\apache-maven-3.0.3\bin\maven-core\target\test-classes;C:\apache-maven-3.0.3\bin\maven-core\target\classes;C:\apache-maven-3.0.3\bin\maven-model\target\maven-model-3.0.3.jar;C:\apache-maven-3.0.3\bin\maven-settings\target\maven-settings-3.0.3.jar;C:\apache-maven-3.0.3\bin\maven-settings-builder\target\maven-settings-builder-3.0.3.jar;C:\apache-maven-3.0.3\bin\maven-repository-metadata\target\maven-repository-metadata-3.0.3.jar;C:\apache-maven-3.0.3\bin\maven-artifact\target\maven-artifact-3.0.3.jar;C:\apache-maven-3.0.3\bin\maven-plugin-api\target\maven-plugin-api-3.0.3.jar;C:\apache-maven-3.0.3\bin\maven-model-builder\target\maven-model-builder-3.0.3.jar;C:\apache-maven-3.0.3\bin\maven-aether-provider\target\maven-aether-provider-3.0.3.jar;C:\Users\poojaak\.m2\repository\org\sonatype\aether\aether-spi\1.11\aether-spi-1.11.jar;C:\Users\poojaak\.m2\repository\org\sonatype\aether\aether-impl\1.11\aether-impl-1.11.jar;C:\Users\poojaak\.m2\repository\org\sonatype\aether\aether-api\1.11\aether-api-1.11.jar;C:\Users\poojaak\.m2\repository\org\sonatype\aether\aether-util\1.11\aether-util-1.11.jar;C:\Users\poojaak\.m2\repository\org\sonatype\sisu\sisu-inject-plexus\2.1.1\sisu-inject-plexus-2.1.1.jar;C:\Users\poojaak\.m2\repository\org\sonatype\sisu\sisu-inject-bean\2.1.1\sisu-inject-bean-2.1.1.jar;C:\Users\poojaak\.m2\repository\org\sonatype\sisu\sisu-guice\2.9.4\sisu-guice-2.9.4-no_aop.jar;C:\Users\poojaak\.m2\repository\org\codehaus\plexus\plexus-interpolation\1.14\plexus-interpolation-1.14.jar;C:\Users\poojaak\.m2\repository\org\codehaus\plexus\plexus-utils\2.0.6\plexus-utils-2.0.6.jar;C:\Users\poojaak\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.4\plexus-classworlds-2.4.jar;C:\Users\poojaak\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar;C:\Users\poojaak\.m2\repository\org\sonatype\plexus\plexus-sec-dispatcher\1.3\plexus-sec-dispatcher-1.3.jar;C:\Users\poojaak\.m2\repository\org\sonatype\plexus\plexus-cipher\1.4\plexus-cipher-1.4.jar;C:\Users\poojaak\.m2\repository\commons-jxpath\commons-jxpath\1.3\commons-jxpath-1.3.jar;C:\Users\poojaak\.m2\repository\junit\junit\3.8.2\junit-3.8.2.jar;"/>
+    <property name="java.vm.specification.version" value="1.0"/>
+    <property name="sun.arch.data.model" value="32"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.6.0_25\jre"/>
+    <property name="sun.java.command" value="C:\apache-maven-3.0.3\bin\maven-core\target\surefire\surefirebooter55141576830015186.jar C:\apache-maven-3.0.3\bin\maven-core\target\surefire\surefire9020053772334055835tmp C:\apache-maven-3.0.3\bin\maven-core\target\surefire\surefire3671900166119496543tmp"/>
+    <property name="java.specification.vendor" value="Sun Microsystems Inc."/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="1.6.0_25"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.6.0_25\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.6.0_25\jre\lib\resources.jar;C:\Program Files\Java\jdk1.6.0_25\jre\lib\rt.jar;C:\Program Files\Java\jdk1.6.0_25\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.6.0_25\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.6.0_25\jre\lib\jce.jar;C:\Program Files\Java\jdk1.6.0_25\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.6.0_25\jre\lib\modules\jdk.boot.jar;C:\Program Files\Java\jdk1.6.0_25\jre\classes"/>
+    <property name="java.vendor" value="Sun Microsystems Inc."/>
+    <property name="localRepository" value="C:\Users\poojaak\.m2\repository"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
+  </properties>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testEmptyUrl"/>
+  <testcase time="0.063" classname="org.apache.maven.project.PomConstructionTest" name="testProfileModules"/>
+  <testcase time="0.046" classname="org.apache.maven.project.PomConstructionTest" name="testParentInheritance"/>
+  <testcase time="0.063" classname="org.apache.maven.project.PomConstructionTest" name="testExecutionConfigurationJoin"/>
+  <testcase time="0.109" classname="org.apache.maven.project.PomConstructionTest" name="testPluginConfigProperties"/>
+  <testcase time="0.062" classname="org.apache.maven.project.PomConstructionTest" name="testProfilePropertiesInterpolation"/>
+  <testcase time="0.063" classname="org.apache.maven.project.PomConstructionTest" name="testThatExecutionsWithoutIdsAreMergedAndTheChildWins"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testDuplicateExclusionsDependency"/>
+  <testcase time="0.062" classname="org.apache.maven.project.PomConstructionTest" name="testMultipleFilters"/>
+  <testcase time="0.062" classname="org.apache.maven.project.PomConstructionTest" name="testDuplicateDependenciesCauseLastDeclarationToBePickedInLenientMode"/>
+  <testcase time="0.063" classname="org.apache.maven.project.PomConstructionTest" name="testParentInterpolation"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testPluginManagementInherited"/>
+  <testcase time="0.046" classname="org.apache.maven.project.PomConstructionTest" name="testPluginManagementDependencies"/>
+  <testcase time="0.063" classname="org.apache.maven.project.PomConstructionTest" name="testReportingInterpolation"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testPluginOrder"/>
+  <testcase time="0.046" classname="org.apache.maven.project.PomConstructionTest" name="testErroneousJoiningOfDifferentPluginsWithEqualDependencies"/>
+  <testcase time="0.063" classname="org.apache.maven.project.PomConstructionTest" name="testErroneousJoiningOfDifferentPluginsWithEqualExecutionIds"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testExecutionConfiguration"/>
+  <testcase time="0.046" classname="org.apache.maven.project.PomConstructionTest" name="testSingleConfigurationInheritance"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testConfigWithPluginManagement"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testExecutionConfigurationSubcollections"/>
+  <testcase time="0.062" classname="org.apache.maven.project.PomConstructionTest" name="testMultipleRepositories"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testMultipleExecutionIds"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testConsecutiveEmptyElements"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testOrderOfGoalsFromPluginExecutionWithoutPluginManagement"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testOrderOfGoalsFromPluginExecutionWithPluginManagement"/>
+  <testcase time="0.046" classname="org.apache.maven.project.PomConstructionTest" name="testOrderOfPluginExecutionsWithoutPluginManagement"/>
+  <testcase time="0.063" classname="org.apache.maven.project.PomConstructionTest" name="testOrderOfPluginExecutionsWithPluginManagement"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testMergeOfPluginExecutionsWhenChildInheritsPluginVersion"/>
+  <testcase time="0.046" classname="org.apache.maven.project.PomConstructionTest" name="testMergeOfPluginExecutionsWhenChildAndParentUseDifferentPluginVersions"/>
+  <testcase time="0.063" classname="org.apache.maven.project.PomConstructionTest" name="testInterpolationWithXmlMarkup"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testOrderOfMergedPluginExecutionsWithoutPluginManagement"/>
+  <testcase time="0.062" classname="org.apache.maven.project.PomConstructionTest" name="testOrderOfMergedPluginExecutionsWithPluginManagement"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testDifferentContainersWithSameId"/>
+  <testcase time="0.062" classname="org.apache.maven.project.PomConstructionTest" name="testOrderOfMergedPluginExecutionGoalsWithoutPluginManagement"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testOrderOfMergedPluginExecutionGoalsWithPluginManagement"/>
+  <testcase time="0.062" classname="org.apache.maven.project.PomConstructionTest" name="testOverridingOfInheritedPluginExecutionsWithoutPluginManagement"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testOverridingOfInheritedPluginExecutionsWithPluginManagement"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testOrderOfMergedPluginDependenciesWithoutPluginManagement"/>
+  <testcase time="0.062" classname="org.apache.maven.project.PomConstructionTest" name="testOrderOfMergedPluginDependenciesWithPluginManagement"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testInterpolationOfNestedBuildDirectories"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testAppendArtifactIdOfChildToInheritedUrls"/>
+  <testcase time="0.046" classname="org.apache.maven.project.PomConstructionTest" name="testAppendArtifactIdOfParentAndChildToInheritedUrls"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testNonInheritedElementsInSubtreesOverriddenByChild"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testXmlTextCoalescing"/>
+  <testcase time="0.062" classname="org.apache.maven.project.PomConstructionTest" name="testFullInterpolationOfNestedExpressions"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testInterpolationOfLegacyExpressionsThatDontIncludeTheProjectPrefix"/>
+  <testcase time="0.063" classname="org.apache.maven.project.PomConstructionTest" name="testInterpolationWithBasedirAlignedDirectories"/>
+  <testcase time="0.046" classname="org.apache.maven.project.PomConstructionTest" name="testInterpolationOfBasedirInPomWithUnusualName"/>
+  <testcase time="0.063" classname="org.apache.maven.project.PomConstructionTest" name="testJoiningOfContainersWhenChildHasEmptyElements"/>
+  <testcase time="0.062" classname="org.apache.maven.project.PomConstructionTest" name="testOrderOfPluginConfigurationElementsWithoutPluginManagement"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testOrderOfPluginConfigurationElementsWithPluginManagement"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testOrderOfPluginExecutionConfigurationElementsWithoutPluginManagement"/>
+  <testcase time="0.062" classname="org.apache.maven.project.PomConstructionTest" name="testOrderOfPluginExecutionConfigurationElementsWithPluginManagement"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testMergeOfInheritedPluginConfiguration"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testAppendOfInheritedPluginConfigurationWithNoProfile"/>
+  <testcase time="0.062" classname="org.apache.maven.project.PomConstructionTest" name="testAppendOfInheritedPluginConfigurationWithActiveProfile"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testMultiplePluginExecutionsWithAndWithoutIdsWithoutPluginManagement"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testMultiplePluginExecutionsWithAndWithoutIdsWithPluginManagement"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testDependencyOrderWithoutPluginManagement"/>
+  <testcase time="0.046" classname="org.apache.maven.project.PomConstructionTest" name="testDependencyOrderWithPluginManagement"/>
+  <testcase time="0.063" classname="org.apache.maven.project.PomConstructionTest" name="testBuildDirectoriesUsePlatformSpecificFileSeparator"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testMergedFilterOrder"/>
+  <testcase time="0.046" classname="org.apache.maven.project.PomConstructionTest" name="testProfileInjectedDependencies"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testProfileDependenciesMultipleProfiles"/>
+  <testcase time="0.063" classname="org.apache.maven.project.PomConstructionTest" name="testDependencyInheritance"/>
+  <testcase time="0.046" classname="org.apache.maven.project.PomConstructionTest" name="testManagedProfileDependency"/>
+  <testcase time="0.063" classname="org.apache.maven.project.PomConstructionTest" name="testProfileModuleInheritance"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testUncPath"/>
+  <testcase time="0.046" classname="org.apache.maven.project.PomConstructionTest" name="testUrlAppendWithChildPathAdjustment"/>
+  <testcase time="0.063" classname="org.apache.maven.project.PomConstructionTest" name="testRepoInheritance"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testEmptyScm"/>
+  <testcase time="0.046" classname="org.apache.maven.project.PomConstructionTest" name="testPluginConfigurationUsingAttributesWithoutPluginManagement"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testPluginConfigurationUsingAttributesWithPluginManagement"/>
+  <testcase time="0.063" classname="org.apache.maven.project.PomConstructionTest" name="testPluginConfigurationUsingAttributesWithPluginManagementAndProfile"/>
+  <testcase time="0.046" classname="org.apache.maven.project.PomConstructionTest" name="testPomEncoding"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testXmlWhitespaceHandling"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testInterpolationOfBaseUrl"/>
+  <testcase time="0.062" classname="org.apache.maven.project.PomConstructionTest" name="testReportingPluginConfig"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testPropertiesNoDuplication"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testPomInheritance"/>
+  <testcase time="0.078" classname="org.apache.maven.project.PomConstructionTest" name="testCompleteModelWithoutParent"/>
+  <testcase time="0.062" classname="org.apache.maven.project.PomConstructionTest" name="testCompleteModelWithParent"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testProfileInjectionOrder"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testPropertiesInheritance"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testInheritedPropertiesInterpolatedWithValuesFromChildWithoutProfiles"/>
+  <testcase time="0.062" classname="org.apache.maven.project.PomConstructionTest" name="testInheritedPropertiesInterpolatedWithValuesFromChildWithActiveProfiles"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testProfileDefaultActivation"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testBooleanInterpolation"/>
+  <testcase time="0.062" classname="org.apache.maven.project.PomConstructionTest" name="testBuildExtensionInheritance"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testJdkActivation"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testProfilePluginMngDependencies"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testPercentEncodedUrlsMustNotBeDecoded"/>
+  <testcase time="0.046" classname="org.apache.maven.project.PomConstructionTest" name="testPluginManagementInheritance"/>
+  <testcase time="0.094" classname="org.apache.maven.project.PomConstructionTest" name="testProfilePlugins"/>
+  <testcase time="0.062" classname="org.apache.maven.project.PomConstructionTest" name="testPluginInheritanceSimple"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testPluginManagementDuplicate"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testDistributionManagement"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testDependencyScopeInheritance"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testDependencyScope"/>
+  <testcase time="0.062" classname="org.apache.maven.project.PomConstructionTest" name="testDependencyManagementWithInterpolation"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testInterpolationWithSystemProperty"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testPluginExecutionInheritanceWhenChildDoesNotDeclarePlugin"/>
+  <testcase time="0.062" classname="org.apache.maven.project.PomConstructionTest" name="testPluginExecutionInheritanceWhenChildDoesDeclarePluginAsWell"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testValidationErrorUponNonUniqueArtifactRepositoryId"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testValidationErrorUponNonUniquePluginRepositoryId"/>
+  <testcase time="0.046" classname="org.apache.maven.project.PomConstructionTest" name="testValidationErrorUponNonUniqueArtifactRepositoryIdInProfile"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testValidationErrorUponNonUniquePluginRepositoryIdInProfile"/>
+  <testcase time="0.063" classname="org.apache.maven.project.PomConstructionTest" name="testPrerequisitesAreNotInherited"/>
+  <testcase time="0.046" classname="org.apache.maven.project.PomConstructionTest" name="testLicensesAreInheritedButNotAggregated"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testDevelopersAreInheritedButNotAggregated"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testContributorsAreInheritedButNotAggregated"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testMailingListsAreInheritedButNotAggregated"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testPluginInheritanceOrder"/>
+  <testcase time="0.046" classname="org.apache.maven.project.PomConstructionTest" name="testCliPropsDominateProjectPropsDuringInterpolation"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testParentPomPackagingMustBePom"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testManagedPluginConfigurationAppliesToImplicitPluginsIntroducedByPackaging"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testDefaultPluginsExecutionContributedByPackagingExecuteBeforeUserDefinedExecutions"/>
+  <testcase time="0.062" classname="org.apache.maven.project.PomConstructionTest" name="testPluginDeclarationsRetainPomOrderAfterInjectionOfDefaultPlugins"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testPluginOrderAfterMergingWithInheritedPlugins"/>
+  <testcase time="0.047" classname="org.apache.maven.project.PomConstructionTest" name="testPluginOrderAfterMergingWithInjectedPlugins"/>
+  <testcase time="0.062" classname="org.apache.maven.project.PomConstructionTest" name="testProjectArtifactIdIsNotInheritedButMandatory"/>
+</testsuite>

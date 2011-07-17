@@ -1,0 +1,4 @@
+org/apache/maven/project/AbstractMavenProjectTestCase.xml
+Artifact: maven-test:t04-a:jar 1.0 Optional=false
+Artifact: maven-test:t04-b:jar 1.0 Optional=false
+Artifact: maven-test:t04-c:jar 1.0 Optional=false

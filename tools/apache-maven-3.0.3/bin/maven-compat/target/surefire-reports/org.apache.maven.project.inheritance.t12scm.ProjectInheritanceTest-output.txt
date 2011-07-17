@@ -1,0 +1,19 @@
+org/apache/maven/project/AbstractMavenProjectTestCase.xml
+
+
+
+Parent SCM URL is: http://host/viewer?path=/p0
+Child SCM URL is: http://host/viewer?path=/p0/modules/p1
+
+Parent SCM connection is: scm:svn:http://host/p0
+Child SCM connection is: scm:svn:http://host/p0/modules/p1
+
+Parent SCM developer connection is: scm:svn:https://host/p0
+Child SCM developer connection is: scm:svn:https://host/p0/modules/p1
+org/apache/maven/project/AbstractMavenProjectTestCase.xml
+
+
+
+Child SCM URL is: http://host/viewer?path=/p0/modules/p1
+Child SCM connection is: scm:svn:http://host/p0/modules/p1
+Child SCM developer connection is: scm:svn:https://host/p0/modules/p1

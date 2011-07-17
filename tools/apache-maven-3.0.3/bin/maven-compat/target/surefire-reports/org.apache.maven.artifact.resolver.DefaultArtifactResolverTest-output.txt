@@ -1,0 +1,1 @@
+[WARNING] Missing POM for org.apache.maven:g:jar:1.0

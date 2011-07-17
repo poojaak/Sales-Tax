@@ -1,0 +1,3 @@
+org/apache/maven/project/AbstractMavenProjectTestCase.xml
+Project maven-t10:p1:pom:1.0 MavenProject: maven-t10:p1:1.0 @ C:\apache-maven-3.0.3\bin\maven-compat\src\test\resources\inheritance-repo\t10\p0\p1\pom.xml
+test

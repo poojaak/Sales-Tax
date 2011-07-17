@@ -1,0 +1,12 @@
+[WARNING] *** CHECKSUM FAILED - Error retrieving checksum file for path - IGNORING
+[WARNING] *** CHECKSUM FAILED - Error retrieving checksum file for path - IGNORING
+attempting to create parent directories for destination: test-1.0.jar.tmp
+Downloading: path from string://url
+
+#
+Transfer finished. 8 bytes copied in 0.0 seconds
+[WARNING] *** CHECKSUM FAILED - Error retrieving checksum file for path - IGNORING
+Uploading: path to string://url
+
+#
+Transfer finished. 11 bytes copied in 0.0 seconds

@@ -1,0 +1,5 @@
+#surefire
+#Sat Jun 25 17:56:56 IST 2011
+user.dir=C\:\\apache-maven-3.0.3\\bin\\maven-settings
+localRepository=C\:\\Users\\poojaak\\.m2\\repository
+basedir=C\:\\apache-maven-3.0.3\\bin\\maven-settings

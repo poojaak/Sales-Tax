@@ -1,0 +1,2 @@
+org/apache/maven/project/AbstractMavenProjectTestCase.xml
+org/apache/maven/project/AbstractMavenProjectTestCase.xml

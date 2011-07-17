@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component-set>
+  <components>
+    <component>
+      <role>org.apache.maven.lifecycle.binding.LegacyLifecycleParsingTestComponent</role>
+      <role-hint>default</role-hint>
+      <implementation>org.apache.maven.lifecycle.binding.LegacyLifecycleParsingTestComponent</implementation>
+      <configuration>
+        <lifecycles>
+          <lifecycle>
+            <id>default</id>
+            <phases>
+              <phase>validate</phase>
+              <phase>initialize</phase>
+              <phase>generate-sources</phase>
+              <phase>process-sources</phase>
+              <phase>generate-resources</phase>
+              <phase>process-resources</phase>
+              <phase>compile</phase>
+              <phase>process-classes</phase>
+              <phase>generate-test-sources</phase>
+              <phase>process-test-sources</phase>
+              <phase>generate-test-resources</phase>
+              <phase>process-test-resources</phase>
+              <phase>test-compile</phase>
+              <phase>process-test-classes</phase>
+              <phase>test</phase>
+              <phase>prepare-package</phase>
+              <phase>package</phase>
+              <phase>pre-integration-test</phase>
+              <phase>integration-test</phase>
+              <phase>post-integration-test</phase>
+              <phase>verify</phase>
+              <phase>install</phase>
+              <phase>deploy</phase>
+            </phases>
+          </lifecycle>
+          <lifecycle>
+            <id>clean</id>
+            <phases>
+              <phase>pre-clean</phase>
+              <phase>clean</phase>
+              <phase>post-clean</phase>
+            </phases>
+            <default-phases>
+              <clean>org.apache.maven.plugins:maven-clean-plugin:clean</clean>
+            </default-phases>
+          </lifecycle>
+          <lifecycle>
+            <id>site</id>
+            <phases>
+              <phase>pre-site</phase>
+              <phase>site</phase>
+              <phase>post-site</phase>
+              <phase>site-deploy</phase>
+            </phases>
+            <default-phases>
+              <site>org.apache.maven.plugins:maven-site-plugin:site</site>
+              <site-deploy>org.apache.maven.plugins:maven-site-plugin:deploy</site-deploy>
+            </default-phases>
+          </lifecycle>
+        </lifecycles>
+      </configuration>
+    </component>
+    <component>
+      <role>org.apache.maven.lifecycle.mapping.LifecycleMapping</role>
+      <role-hint>test-mapping</role-hint>
+      <implementation>org.apache.maven.lifecycle.mapping.DefaultLifecycleMapping</implementation>
+      <configuration>
+        <lifecycles>
+          <lifecycle>
+            <id>default</id>
+            
+            
+            <phases>
+              <package>org.apache.maven.plugins:maven-site-plugin:attach-descriptor</package>
+              <install>org.apache.maven.plugins:maven-install-plugin:install</install>
+              <deploy>org.apache.maven.plugins:maven-deploy-plugin:deploy</deploy>
+            </phases>
+            <optional-mojos>
+              <optional-mojo>org.apache.maven.plugins:maven-site-plugin:attach-descriptor</optional-mojo>
+            </optional-mojos>
+            
+          </lifecycle>
+        </lifecycles>
+      </configuration>
+    </component>
+    <component>
+      <role>org.apache.maven.lifecycle.mapping.LifecycleMapping</role>
+      <role-hint>test-mapping2</role-hint>
+      <implementation>org.apache.maven.lifecycle.mapping.DefaultLifecycleMapping</implementation>
+      <configuration>
+        <lifecycles>
+          <lifecycle>
+            <id>default</id>
+            
+            <phases>
+              <package>
+                org.apache.maven.plugins:maven-site-plugin:attach-descriptor,
+                org.apache.maven.plugins:maven-clean-plugin:clean
+              </package>
+              <install>org.apache.maven.plugins:maven-install-plugin:install</install>
+              <deploy>org.apache.maven.plugins:maven-deploy-plugin:deploy</deploy>
+            </phases>
+            <optional-mojos>
+              <optional-mojo>org.apache.maven.plugins:maven-site-plugin:attach-descriptor</optional-mojo>
+            </optional-mojos>
+            
+          </lifecycle>
+        </lifecycles>
+      </configuration>
+    </component>
+  <component>
+      <role>org.apache.maven.artifact.metadata.ArtifactMetadataSource</role>
+      <role-hint>classpath</role-hint>
+      <implementation>org.apache.maven.project.TestMetadataSource</implementation>
+      <description />
+      <isolated-realm>false</isolated-realm>
+      <requirements>
+        <requirement>
+          <role>org.apache.maven.artifact.repository.metadata.RepositoryMetadataManager</role>
+          <role-hint />
+          <field-name>repositoryMetadataManager</field-name>
+        </requirement>
+        <requirement>
+          <role>org.apache.maven.artifact.factory.ArtifactFactory</role>
+          <role-hint />
+          <field-name>repositorySystem</field-name>
+        </requirement>
+        <requirement>
+          <role>org.codehaus.plexus.PlexusContainer</role>
+          <role-hint />
+          <field-name>container</field-name>
+        </requirement>
+        <requirement>
+          <role>org.codehaus.plexus.logging.Logger</role>
+          <role-hint />
+          <field-name>logger</field-name>
+        </requirement>
+        <requirement>
+          <role>org.apache.maven.project.artifact.MavenMetadataCache</role>
+          <role-hint />
+          <field-name>cache</field-name>
+        </requirement>
+        <requirement>
+          <role>org.apache.maven.plugin.LegacySupport</role>
+          <role-hint />
+          <field-name>legacySupport</field-name>
+        </requirement>
+      </requirements>
+    </component><component>
+      <role>org.apache.maven.artifact.repository.layout.ArtifactRepositoryLayout</role>
+      <role-hint>legacy</role-hint>
+      <implementation>org.apache.maven.repository.LegacyRepositoryLayout</implementation>
+      <description />
+      <isolated-realm>false</isolated-realm>
+    </component><component>
+      <role>org.sonatype.aether.spi.connector.RepositoryConnectorFactory</role>
+      <role-hint>test</role-hint>
+      <implementation>org.apache.maven.repository.TestRepositoryConnectorFactory</implementation>
+      <description />
+      <isolated-realm>false</isolated-realm>
+    </component><component>
+      <role>org.apache.maven.repository.RepositorySystem</role>
+      <role-hint>default</role-hint>
+      <implementation>org.apache.maven.repository.TestRepositorySystem</implementation>
+      <description />
+      <isolated-realm>false</isolated-realm>
+      <requirements>
+        <requirement>
+          <role>org.apache.maven.model.io.ModelReader</role>
+          <role-hint />
+          <field-name>modelReader</field-name>
+        </requirement>
+      </requirements>
+    </component></components>
+</component-set>

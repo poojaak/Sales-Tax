@@ -1,0 +1,5 @@
+org/apache/maven/project/AbstractMavenProjectTestCase.xml
+Artifact: maven-test:t05-a:jar 1.0 Scope: runtime
+Artifact: maven-test:t05-b:jar 1.0 Scope: runtime
+Artifact: maven-test:t05-d:jar 1.0 Scope: runtime
+Artifact: maven-test:t05-c:jar 1.0 Scope: runtime

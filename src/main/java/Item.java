@@ -58,7 +58,7 @@ public class Item implements ItemTypeConstants {
     public String toString() {
         String format=getItemQuantity()+ " ";
         if(getTypeOfItem().equals(IMPORTED)){
-            format+=IMPORTED +" ";
+            format+=getTypeOfItem() +" ";
         }
         return format+=getItemName() + ": " + String.format("%.2f",getSalesTax());
     }

@@ -1,25 +1,25 @@
-
 public class ConvertToItem implements ItemTypeConstants {
 
- public Item createItem(String itemInfo) {
-        final String SPACE=" ";
-        int itemQuantiy=Integer.parseInt(itemInfo.substring(0, itemInfo.indexOf(SPACE)));
-        String itemName=itemInfo.substring(itemInfo.indexOf(SPACE)+1,itemInfo.lastIndexOf(SPACE)-3);
-        double itemPrice=Double.parseDouble(itemInfo.substring(itemInfo.lastIndexOf(SPACE),itemInfo.length()));
+    public Item createItem(String itemInfo) {
+        final String SPACE = " ";
+        int firstSpace = itemInfo.indexOf(SPACE);
+        int lastSpace = itemInfo.lastIndexOf(SPACE);
 
-        Item item=new Item(itemQuantiy,itemName,itemPrice);
-        item=setTypeToImportedItem(itemName, item);
+        int itemQuantity = Integer.parseInt(itemInfo.substring(0, firstSpace));
+        String itemName = itemInfo.substring(firstSpace + 1, lastSpace - 3);
+        double itemPrice = Double.parseDouble(itemInfo.substring(lastSpace, itemInfo.length()));
+
+        Item item = new Item(itemQuantity, itemName, itemPrice);
+        item = setTypeToImportedItem(itemName, item);
 
         return item;
     }
 
     private Item setTypeToImportedItem(String itemName, Item item) {
-        if(itemName.contains(IMPORTED)){
-            itemName=itemName.replace(IMPORTED,"");
-            item.setItemName(itemName.trim());
+        if (itemName.contains(IMPORTED)) {
+            item.setItemName(itemName.replace(IMPORTED, "").trim());
             item.setTypeOfItem(IMPORTED);
-        }
-        else
+        } else
             item.setTypeOfItem(LOCAL);
 
         return item;

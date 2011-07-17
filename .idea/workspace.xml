@@ -15,22 +15,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c7b6fa2-edfe-4f37-a5ea-d0995e4604b3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/unit/java/ReceiptPrintTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/BasketOfGoods.class" afterPath="$PROJECT_DIR$/target/classes/BasketOfGoods.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ConvertToItem.class" afterPath="$PROJECT_DIR$/target/classes/ConvertToItem.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Item.class" afterPath="$PROJECT_DIR$/target/classes/Item.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/SalesCounter.class" afterPath="$PROJECT_DIR$/target/classes/SalesCounter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/TotalAmountAndSalesTaxCalculator.class" afterPath="$PROJECT_DIR$/target/classes/TotalAmountAndSalesTaxCalculator.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mkyong-core-1.0-SNAPSHOT-sources.jar" afterPath="$PROJECT_DIR$/target/mkyong-core-1.0-SNAPSHOT-sources.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mkyong-core-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/mkyong-core-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sales-Tax.iml" afterPath="$PROJECT_DIR$/Sales-Tax.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/BasketOfGoods.java" afterPath="$PROJECT_DIR$/src/main/java/BasketOfGoods.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ConvertToItem.java" afterPath="$PROJECT_DIR$/src/main/java/ConvertToItem.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Item.java" afterPath="$PROJECT_DIR$/src/main/java/Item.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/SalesCounter.java" afterPath="$PROJECT_DIR$/src/main/java/SalesCounter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/TotalAmountAndSalesTaxCalculator.java" afterPath="$PROJECT_DIR$/src/main/java/TotalAmountAndSalesTaxCalculator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/functional/java/SalesCounterTest.java" afterPath="$PROJECT_DIR$/src/test/functional/java/SalesCounterTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/integration/java/BasketOfGoodsTest.java" afterPath="$PROJECT_DIR$/src/test/integration/java/BasketOfGoodsTest.java" />
     </list>
     <ignored path="Sales-Tax.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -103,21 +94,21 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/test/unit/java/SalesCounterTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ConvertToItem.java" />
         <option value="$PROJECT_DIR$/src/main/java/Receipt.java" />
         <option value="$PROJECT_DIR$/src/test/unit/java/ReceiptTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Item.java" />
         <option value="$PROJECT_DIR$/src/main/java/TotalAmountAndSalesTaxCalculator.java" />
         <option value="$PROJECT_DIR$/src/test/functional/functionalTest.java" />
         <option value="$PROJECT_DIR$/src/test/functional/java/functionalTest.java" />
         <option value="$PROJECT_DIR$/src/test/functional/java/FunctionalTest.java" />
         <option value="$PROJECT_DIR$/src/test/integration/java/SalesCounterTest.java" />
-        <option value="$PROJECT_DIR$/src/test/functional/java/SalesCounterTest.java" />
         <option value="$PROJECT_DIR$/src/test/integration/java/BasketOfGoodsTest.java" />
         <option value="$PROJECT_DIR$/src/test/unit/java/ReceiptPrintTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Forum.java" />
         <option value="$PROJECT_DIR$/src/main/java/SalesCounter.java" />
         <option value="$PROJECT_DIR$/src/main/java/BasketOfGoods.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Item.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ConvertToItem.java" />
+        <option value="$PROJECT_DIR$/src/test/functional/java/SalesCounterTest.java" />
       </list>
     </option>
   </component>
@@ -202,6 +193,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sales-Tax" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sales-Tax" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -264,76 +273,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Forum">
-    <configuration default="false" name="All in Sales-Tax" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" />
-      <module name="Sales-Tax" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="package" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="SalesCounterTest" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" />
-      <module name="Sales-Tax" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SalesCounterTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="BasketOfGoodsTest" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" />
-      <module name="Sales-Tax" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BasketOfGoodsTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.All in Sales-Tax">
     <configuration default="false" name="ReceiptPrintTest.checkPrintReceipt" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" />
       <module name="Sales-Tax" />
@@ -370,6 +310,75 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="Sales-Tax" />
       <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ReceiptPrintTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" />
+      <module name="Sales-Tax" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ReceiptPrintTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="SalesCounterTest.checkReceipt" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" />
+      <module name="Sales-Tax" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SalesCounterTest" />
+      <option name="METHOD_NAME" value="checkReceipt" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="All in Sales-Tax" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" />
+      <module name="Sales-Tax" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
@@ -555,11 +564,11 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="JUnit.unit.java in Sales-Tax" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.All in Sales-Tax" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.SalesCounterTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.BasketOfGoodsTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ReceiptPrintTest.checkPrintReceipt" />
-      <item index="5" class="java.lang.String" itemvalue="Application.Forum" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ReceiptPrintTest.checkPrintReceipt" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Forum" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ReceiptPrintTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.SalesCounterTest.checkReceipt" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.All in Sales-Tax" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -611,8 +620,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25609756" sideWeight="0.69093853" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3090615" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25609756" sideWeight="0.69093853" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3090615" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33666667" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -721,39 +730,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ConvertToItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="44" selection-start="786" selection-end="786" vertical-scroll-proportion="0.76884425">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ItemListParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="32" selection-start="911" selection-end="911" vertical-scroll-proportion="0.72613066">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Item.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="81" selection-start="1435" selection-end="1435" vertical-scroll-proportion="0.6155779">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/integration/java/BasketOfGoodsTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="35" selection-start="443" selection-end="884" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/functional/java/SalesCounterTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="47" selection-start="567" selection-end="567" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -800,6 +779,36 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/BasketOfGoods.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="30" selection-start="117" selection-end="117" vertical-scroll-proportion="0.21356784">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="35" selection-start="1344" selection-end="1344" vertical-scroll-proportion="0.5301508">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ConvertToItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="42" selection-start="757" selection-end="757" vertical-scroll-proportion="0.73115575">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/functional/java/SalesCounterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="58" selection-start="829" selection-end="829" vertical-scroll-proportion="0.40201005">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ItemListParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="32" selection-start="911" selection-end="911" vertical-scroll-proportion="1.0100503">
           <folding />
         </state>
       </provider>

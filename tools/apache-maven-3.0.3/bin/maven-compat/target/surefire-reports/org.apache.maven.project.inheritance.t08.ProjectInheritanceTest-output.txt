@@ -1,0 +1,6 @@
+org/apache/maven/project/AbstractMavenProjectTestCase.xml
+Project maven-t08:p1:pom:1.0 MavenProject: maven-t08:p1:1.0 @ C:\apache-maven-3.0.3\bin\maven-compat\src\test\resources\inheritance-repo\t08\p0\p1\pom.xml
+Artifact: maven-test:t08-a:jar 1.0 Optional=false
+Artifact: maven-test:t08-b:jar 1.0 Optional=false
+Artifact: maven-test:t08-c:jar 1.0 Optional=false
+Artifact: maven-test:t08-d:jar 1.0 Optional=false
