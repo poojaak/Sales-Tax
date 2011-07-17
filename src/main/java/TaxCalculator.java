@@ -6,9 +6,11 @@ public class TaxCalculator implements RoundToNearestValue{
 
     public int calculateTaxPercent(Item item) {
         int salesTaxPercent=0;
-        TypeOfItem typeOfItem=new TypeOfItem();
-        boolean isExemptedGood = typeOfItem.checkIfGoodsAreExemptedFromTax(item);
-        return salesTaxPercent+=(isExemptedGood?0: LOCAL_TAX_PERCENT) + (typeOfItem.checkIfItemIsImported(item)? IMPORTED_TAX_PERCENT :0);
+        ItemType typeOfItem=new TaxExemptedItem();
+        boolean isExemptedGood = typeOfItem.checkItemType(item);
+        typeOfItem=new ImportedItem();
+        boolean isImportedGood=typeOfItem.checkItemType(item);
+        return salesTaxPercent+=(isExemptedGood?0: LOCAL_TAX_PERCENT) + (isImportedGood? IMPORTED_TAX_PERCENT :0);
    }
 
     public double calculatePriceAfterTaxation(Item item) {
