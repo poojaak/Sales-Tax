@@ -23,7 +23,7 @@ public class BasketOfGoods {
     }
 
     public List<Item> getItemsFromBasket(String items) {
-        itemList=itemListParser.getItemsFromBasket(items);
+        itemList=itemListParser.takeItemsFromBasket(items);
         return itemList;
     }
 

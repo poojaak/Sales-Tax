@@ -7,7 +7,7 @@ import java.util.List;
 
 public class ItemListParser {
 
-    public List<Item> getItemsFromBasket(String basket) {
+    public List<Item> takeItemsFromBasket(String basket) {
         List<Item> itemList = new ArrayList<Item>();
         Item item;
 

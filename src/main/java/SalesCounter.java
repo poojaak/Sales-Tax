@@ -2,11 +2,13 @@ import java.util.List;
 
 public class SalesCounter {
     BasketOfGoods basketOfGoods;
-    TotalAmountAndSalesTaxCalculator calculator =new TotalAmountAndSalesTaxCalculator();
-    Receipt receipt=new Receipt();
+    TotalAmountAndSalesTaxCalculator calculator;
+    Receipt receipt;
 
     SalesCounter(){
         basketOfGoods=new BasketOfGoods();
+        calculator =new TotalAmountAndSalesTaxCalculator();
+        receipt=new Receipt();
     }
 
     public void printReceipt(String basket) {
