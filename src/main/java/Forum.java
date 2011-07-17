@@ -2,14 +2,13 @@
 public class Forum {
 
     public static void main(String[] args){
-        BasketOfGoods basketOfGoods1=new BasketOfGoods();
-        basketOfGoods1.printReceipt("basket1.txt");
+        SalesCounter counter1=new SalesCounter();
+        counter1.printReceipt("basket1.txt");
 
-        BasketOfGoods basketOfGoods2=new BasketOfGoods();
-        basketOfGoods2.printReceipt("basket2.txt");
+        SalesCounter counter2=new SalesCounter();
+        counter2.printReceipt("basket2.txt");
 
-        BasketOfGoods basketOfGoods3=new BasketOfGoods();
-        basketOfGoods3.printReceipt("basket3.txt");
-       
+        SalesCounter counter3=new SalesCounter();
+        counter3.printReceipt("basket3.txt");
     }
 }
