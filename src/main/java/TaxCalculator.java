@@ -1,5 +1,5 @@
 
-public class TaxCalculator implements RoundToNearestValue{
+public class TaxCalculator{
 
     public static final int LOCAL_TAX_PERCENT = 10;
     public static final int IMPORTED_TAX_PERCENT = 5;
