@@ -12,13 +12,11 @@ public class ItemListParserTest {
     @Test
     public void shouldMakeAnItem(){
         Item book=new Item(1,"book",12.49);
-        itemList=itemListParser.getItemsFromBasket("basket1.txt");
+        Item parsedItem=itemListParser.makeItem("1 book at 12.49");
 
-        Item retrievedItem=itemList.get(0);
-
-        assertEquals(retrievedItem.getItemName(), book.getItemName());
-        assertEquals(retrievedItem.getItemQuantity(), book.getItemQuantity());
-        assertEquals(retrievedItem.getPrice(), book.getPrice(), 0);
+        assertEquals(parsedItem.getItemName(), book.getItemName());
+        assertEquals(parsedItem.getItemQuantity(), book.getItemQuantity());
+        assertEquals(parsedItem.getPrice(), book.getPrice(), 0);
 
     }
 }

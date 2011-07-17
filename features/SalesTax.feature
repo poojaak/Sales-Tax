@@ -1,6 +1,6 @@
 Feature: Calculation of sales tax
 
-Scenario: Sales tax
+Scenario: Input1
     Given the price of 1 book is 12.49
     And the price of 1 music CD is 14.99
     And the price of 1 chocolate bar is 0.85

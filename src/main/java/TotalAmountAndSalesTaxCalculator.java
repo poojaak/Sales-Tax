@@ -1,6 +1,6 @@
 
 import java.util.List;
-public class TotalAmountAndSalesTax  {
+public class TotalAmountAndSalesTaxCalculator {
     private Double salesTax;
     private Double total;
 
