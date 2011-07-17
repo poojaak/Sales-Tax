@@ -15,7 +15,6 @@ public class SalesCounterTest {
            System.setOut(new PrintStream(outContent));
        }
 
-
        @Test
        public void checkReceipt() {
            SalesCounter counter = new SalesCounter();

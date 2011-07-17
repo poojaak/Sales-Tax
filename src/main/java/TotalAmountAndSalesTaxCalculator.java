@@ -1,4 +1,3 @@
-
 import java.util.List;
 public class TotalAmountAndSalesTaxCalculator {
     private Double salesTax;
@@ -30,6 +29,6 @@ public class TotalAmountAndSalesTaxCalculator {
     }
 
     public String toString(){
-        return "Sales Tax: "+getSalesTax()+"\nTotal: "+getTotal()+"\n";
+        return "Sales Taxes: "+getSalesTax()+"\nTotal: "+getTotal()+"\n";
     }
 }

@@ -60,6 +60,6 @@ public class Item implements ItemTypeConstants {
         if(getTypeOfItem().equals(IMPORTED)){
             format+=IMPORTED +" ";
         }
-        return format+=getItemName() + ": " + getSalesTax();
+        return format+=getItemName() + ": " + String.format("%.2f",getSalesTax());
     }
 }
